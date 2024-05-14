@@ -1,3 +1,5 @@
+console.group('Cuadrado')
+
 
 const ladoCUadrado = 5
 const perimetroCUadrado = ladoCUadrado*4
@@ -16,6 +18,9 @@ console.log({
     areaCuadrado
 });
 
+console.groupEnd('Cuadrado')
+console.group('Triangulo')
+
 const ladoTriangulo1 = 6
 const ladoTriangulo2 = 6
 const ladoTrianguloBase = 4
@@ -32,6 +37,7 @@ function calcularTriangulo(lado1,lado2, base, altura){
     }
 }
 
+console.groupEnd('Triangulo')
 
 console.log({
     ladoTriangulo1,
