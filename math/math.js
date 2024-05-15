@@ -48,15 +48,6 @@ console.log({
     areaTriangulo
 });
 
-//perimetro = circunferencia
-//radio, desde el centro a cuaqluier parte del circulo.
-
-//radio x2 = diametro. entre el borde y el opuesto (partir a la mitad)
-
-//para calcular el diametro
-//diametro * pi
-
-//area del circulo = radio al cuadrado * pi
 
 console.group('Circulo')
 
@@ -86,3 +77,18 @@ function calcularCirculo (radio){
 }
 
 console.groupEnd('Circulo')
+
+//altura de un triangulo.
+
+function calcularAlturaTriangulo(lados,base){
+
+    if (lados == base) {
+        console.warn('Este no es un triangulo isoseles');
+    }else{
+        //h = raizcuadrada(lado**2 - (b**2)/4)
+        return Math.sqrt((lados **2) - ((base**2)) / 4)
+    }
+}
+
+//teorema de pitagoras. 
+//hipotenusa.
