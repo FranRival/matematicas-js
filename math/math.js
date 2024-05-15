@@ -60,6 +60,31 @@ console.log({
 
 console.group('Circulo')
 
+const radioCirculo = 3
+const diametroCirculo = radioCirculo * 2
+const pi = 3.141516
 
+const circunferencia = diametroCirculo * pi
+const areaCIrculo = (radioCirculo ** 2) * pi
+
+console.log({
+    radioCirculo,
+    diametroCirculo,
+    pi,
+    circunferencia,
+    areaCIrculo
+});
+
+
+function calcularCirculo (radio){
+    const diametro = radio * 2
+    const radioAlCuadrado = Math.pow(radio, 2)
+
+
+    return {
+        circunferencia: diametro *pi,
+        area: radioAlCuadrado * pi
+    }
+}
 
 console.groupEnd('Circulo')
