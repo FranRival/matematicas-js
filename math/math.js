@@ -47,3 +47,19 @@ console.log({
     perimetroTriangulo,
     areaTriangulo
 });
+
+//perimetro = circunferencia
+//radio, desde el centro a cuaqluier parte del circulo.
+
+//radio x2 = diametro. entre el borde y el opuesto (partir a la mitad)
+
+//para calcular el diametro
+//diametro * pi
+
+//area del circulo = radio al cuadrado * pi
+
+console.group('Circulo')
+
+
+
+console.groupEnd('Circulo')
