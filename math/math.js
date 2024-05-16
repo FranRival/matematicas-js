@@ -90,22 +90,10 @@ function calcularAlturaTriangulo(lados,base){
     }
 }
 
-//teorema de pitagoras. 
-//hipotenusa.
+//porcentajes
 
+function sacarPorcentaje(descuento, precio){
 
-function trianguloEscalenoAltura(lado1,lado2, lado3){
-
-    const semiperimetro = (lado1+lado2+lado3)/2
-
-    lado1 =Math.pow(2, semiperimetro) (semiperimetro((semiperimetro-lado1)(semiperimetro-lado2)(semiperimetro-lado3)))
-/*     lado2 =Math.pow(2, semiperimetro) (semiperimetro(semiperimetro-lado1)(semiperimetro-lado2)(semiperimetro-lado3))
-    lado3 =Math.pow(2, semiperimetro) (semiperimetro(semiperimetro-lado1)(semiperimetro-lado2)(semiperimetro-lado3))
- */
-
-    console.log({
-        lado1,
-        lado2,
-        lado3
-    });
+    const resultado = precio * (100 - descuento)/100
+    return resultado
 }
