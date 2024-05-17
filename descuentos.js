@@ -16,7 +16,19 @@ function sacarPorcentaje(){
 
     let discuento
 
-    if (cupon == 'Batman') {
+    switch (cupon) {
+        case 'Batman':
+            discuento = 30
+            break;
+        case 'descuentox2': 
+            discuento = 25
+            break;
+        default:
+            pResult.innerText('Cupon no valido')
+            return
+    }
+
+/*     if (cupon == 'Batman') {
         discuento = 30
     }else if(cupon =='descuentox2'){
 
@@ -25,7 +37,7 @@ function sacarPorcentaje(){
         pResult.innerText('Cupon no valido')
         return
     }
-
+ */
 
 
 
