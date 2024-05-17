@@ -9,7 +9,7 @@ function sacarPorcentaje(){
     const precio = Number(inoutPrice.value)
     const cupon = inputCoupon.value
 
-    if (!precio || !discuento) {
+    if (!precio || !cupon) {
         pResult.innerText('Llena el formulario alv')
         return
     }
@@ -29,7 +29,7 @@ function sacarPorcentaje(){
 
 
 
-    const resultado = precio * (100 - descuento)/100
+    const resultado = precio * (100 - discuento)/100
     pResult.innerText = 'El nuevo precio con descuento es: $' + resultado
 }
 
