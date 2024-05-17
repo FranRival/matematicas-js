@@ -5,6 +5,9 @@ const pResult = document.querySelector('#result')
 bton.addEventListener('click', sacarPorcentaje)
 
 
+
+const arrayUObject = undefined //[cupones: descuento] {}
+
 function sacarPorcentaje(){
     const precio = Number(inoutPrice.value)
     const cupon = inputCoupon.value
@@ -27,17 +30,6 @@ function sacarPorcentaje(){
             pResult.innerText('Cupon no valido')
             return
     }
-
-/*     if (cupon == 'Batman') {
-        discuento = 30
-    }else if(cupon =='descuentox2'){
-
-        discuento = 25
-    }else{
-        pResult.innerText('Cupon no valido')
-        return
-    }
- */
 
 
 
