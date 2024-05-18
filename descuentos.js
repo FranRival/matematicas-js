@@ -22,6 +22,23 @@ cuponArray.push({ //backedn. nos van a dar la info de this way.
     limit: 500
 })
 
+cuponArray.push({
+    name: 'cuponx2',
+    descuento: 25,
+    limit: 500
+})
+
+cuponArray.push({
+    name: 'cuponx3',
+    descuento: 15,
+    limit: 500
+})
+
+cuponArray.push({
+    name: 'cuponx4',
+    descuento: 10,
+    limit: 500
+})
 
 
 
@@ -59,7 +76,8 @@ function sacarPorcentaje(){
     console.log({
         cupon,
         discuento,
-        cuponEnArray
+        cuponEnArray,
+        cuponArray
     });
 /* 
     if (cuponesObj[cupon]) {
