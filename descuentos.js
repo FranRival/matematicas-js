@@ -6,11 +6,22 @@ bton.addEventListener('click', sacarPorcentaje)
 
 
 
-const cuponesObj = {
+/* const cuponesObj = {
     'Batman': 30,
     'AKA': 25,
     '123': 15
-}
+} */
+
+
+const cuponArray = []
+
+
+cuponArray.push({ //backedn. nos van a dar la info de this way. 
+    name: 'Batman',
+    descuento: 30,
+    limit: 500
+})
+
 
 
 
@@ -25,11 +36,17 @@ function sacarPorcentaje(){
 
     let discuento
 
+
+    cuponArray.filter(function (){
+        //se utilizan mucho cuando se necesita que hacer
+    })
+    
+/* 
     if (cuponesObj[cupon]) {
         discuento = cuponesObj[cupon]
     }else{
         pResult.innerText('Cupon no valido')
-    }
+    } */
 
     
 
