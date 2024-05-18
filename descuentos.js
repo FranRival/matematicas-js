@@ -67,8 +67,8 @@ function sacarPorcentaje(){
     /////////////////////traeme al elemento que cumple con la funcion de validacion.
     
 
-    if (cuponEnArray) {
-        discuento = cuponEnArray.descuento
+    if (cuponEnArray.length > 0) {
+        discuento = cuponEnArray[0].descuento
     }else{
         pResult.innerText('Cupon no valido')
     }
