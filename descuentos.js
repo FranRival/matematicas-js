@@ -6,7 +6,13 @@ bton.addEventListener('click', sacarPorcentaje)
 
 
 
-const arrayUObject = undefined //[cupones: descuento] {}
+const cuponesObj = {
+    'Batman': 30,
+    'AKA': 25,
+    '123': 15
+}
+
+
 
 function sacarPorcentaje(){
     const precio = Number(inoutPrice.value)
@@ -19,21 +25,16 @@ function sacarPorcentaje(){
 
     let discuento
 
-    switch (cupon) {
-        case 'Batman':
-            discuento = 30
-            break;
-        case 'descuentox2': 
-            discuento = 25
-            break;
-        default:
-            pResult.innerText('Cupon no valido')
-            return
+    if (cuponesObj[cupon]) {
+        discuento = cuponesObj[cupon]
+    }else{
+        pResult.innerText('Cupon no valido')
     }
 
-
+    
 
     const resultado = precio * (100 - discuento)/100
     pResult.innerText = 'El nuevo precio con descuento es: $' + resultado
 }
 
+//metodo find - filter 
