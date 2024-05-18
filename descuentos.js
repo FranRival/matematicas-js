@@ -37,10 +37,30 @@ function sacarPorcentaje(){
     let discuento
 
 
-    cuponArray.filter(function (){
-        //se utilizan mucho cuando se necesita que hacer
-    })
+
+
+////////////
+    function encontrarElemento (cuponElemento){//this modofoko representara cada elemento que este dentro del array. {name, descuento:}
+
+        return cuponElemento.name == cupon
+    }
+
+    const cuponEnArray = cuponArray.filter(encontrarElemento)
+
+    /////////////////////traeme al elemento que cumple con la funcion de validacion.
     
+
+    if (cuponEnArray) {
+        discuento = cuponEnArray.descuento
+    }else{
+        pResult.innerText('Cupon no valido')
+    }
+
+    console.log({
+        cupon,
+        discuento,
+        cuponEnArray
+    });
 /* 
     if (cuponesObj[cupon]) {
         discuento = cuponesObj[cupon]
@@ -49,6 +69,11 @@ function sacarPorcentaje(){
     } */
 
     
+
+
+
+
+
 
     const resultado = precio * (100 - discuento)/100
     pResult.innerText = 'El nuevo precio con descuento es: $' + resultado
