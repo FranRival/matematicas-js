@@ -57,18 +57,18 @@ function sacarPorcentaje(){
 
 
 ////////////
-    function encontrarElemento (cuponElemento){//this modofoko representara cada elemento que este dentro del array. {name, descuento:}
+    function encontrarElemento (cuponElemento){
 
         return cuponElemento.name == cupon
     }
 
-    const cuponEnArray = cuponArray.filter(encontrarElemento)
+    const cuponEnArray = cuponArray.find(encontrarElemento)
 
-    /////////////////////traeme al elemento que cumple con la funcion de validacion.
+    /////////////////////devuelve un objeto. al primero que encuentre y cumpla con la validacion.
     
 
-    if (cuponEnArray.length > 0) {
-        discuento = cuponEnArray[0].descuento
+    if (cuponEnArray) {
+        discuento = cuponEnArray.descuento
     }else{
         pResult.innerText('Cupon no valido')
     }
