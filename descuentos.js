@@ -16,7 +16,7 @@ bton.addEventListener('click', sacarPorcentaje)
 const cuponArray = []
 
 
-cuponArray.push({ //backedn. nos van a dar la info de this way. 
+cuponArray.push({//tenemos un array. cada elemtno del array no es el nombre del cupon. es un objeto que tiene propieades. 
     name: 'Batman',
     descuento: 30,
     limit: 500
@@ -56,15 +56,19 @@ function sacarPorcentaje(){
 
 
 
-////////////
+////////////creando una nueva variable temporl. (2)
     function encontrarElemento (cuponElemento){
-
         return cuponElemento.name == cupon
     }
-
+//para no hacer un ciclo for o un ciclo manual para hacer la validacion, se utiliza find. (3)
     const cuponEnArray = cuponArray.find(encontrarElemento)
 
-    /////////////////////devuelve un objeto. al primero que encuentre y cumpla con la validacion.
+    /////////////////////pregunta a todos los arrays, a los elementos es igual alo que escribieron los usuaroios en el html. (1)
+
+    //enviando una funcion como argumento de otra funcion.
+    //esa funcion .find devuelve un objeto que coincide con la validacion,, y devuelve un null o undefind.(4)
+
+    //si existe y desvuelve un obejto, asignamos su propiedad discount. (5)
     
 
     if (cuponEnArray) {
