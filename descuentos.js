@@ -70,6 +70,8 @@ function sacarPorcentaje(){
 
     //si existe y desvuelve un obejto, asignamos su propiedad discount. (5)
     
+    //psar de utilizar con ciclos y condicionales a utilizar metodos de los arrays.
+    
 
     if (cuponEnArray) {
         discuento = cuponEnArray.descuento
