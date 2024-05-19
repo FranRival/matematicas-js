@@ -1,9 +1,7 @@
 function calcularPromedio(lista){
 
 
-    const sumarTodosElementos = (valorAcumulado,nuevoValor) => {
-        return valorAcumulado+nuevoValor
-    }
+    const sumarTodosElementos = (valorAcumulado,nuevoValor) => valorAcumulado+nuevoValor
 
     const sumaLista = lista.reduce(sumarTodosElementos)
 
