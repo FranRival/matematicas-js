@@ -16,3 +16,7 @@ function calcularPromedio(lista){
     return promedio
 
 }
+
+//para hacer funcionar this shit necesitas en la consola:
+
+//enviar una lista en formato array, con corchetes cuadrados.
