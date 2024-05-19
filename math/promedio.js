@@ -3,8 +3,12 @@ function calcularPromedio(lista){
 
     //recorrer los elementos del array para sumarlos.
 
+    let sumaLista = 0
+
     for (let i = 0; i < lista.length; i++) {
-        lista[i]
+        sumaLista = sumaLista + lista[i]
+
+        //[1,2,3,4,5]
     }
 
 }
