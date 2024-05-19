@@ -5,18 +5,10 @@ const pResult = document.querySelector('#result')
 bton.addEventListener('click', sacarPorcentaje)
 
 
-
-/* const cuponesObj = {
-    'Batman': 30,
-    'AKA': 25,
-    '123': 15
-} */
-
-
 const cuponArray = []
 
 
-cuponArray.push({//tenemos un array. cada elemtno del array no es el nombre del cupon. es un objeto que tiene propieades. 
+cuponArray.push({ 
     name: 'Batman',
     descuento: 30,
     limit: 500
@@ -54,24 +46,12 @@ function sacarPorcentaje(){
     let discuento
 
 
-
-
-////////////creando una nueva variable temporl. (2)
     function encontrarElemento (cuponElemento){
         return cuponElemento.name == cupon
     }
-//para no hacer un ciclo for o un ciclo manual para hacer la validacion, se utiliza find. (3)
+
     const cuponEnArray = cuponArray.find(encontrarElemento)
 
-    /////////////////////pregunta a todos los arrays, a los elementos es igual alo que escribieron los usuaroios en el html. (1)
-
-    //enviando una funcion como argumento de otra funcion.
-    //esa funcion .find devuelve un objeto que coincide con la validacion,, y devuelve un null o undefind.(4)
-
-    //si existe y desvuelve un obejto, asignamos su propiedad discount. (5)
-    
-    //psar de utilizar con ciclos y condicionales a utilizar metodos de los arrays.
-    
 
     if (cuponEnArray) {
         discuento = cuponEnArray.descuento
@@ -85,14 +65,6 @@ function sacarPorcentaje(){
         cuponEnArray,
         cuponArray
     });
-/* 
-    if (cuponesObj[cupon]) {
-        discuento = cuponesObj[cupon]
-    }else{
-        pResult.innerText('Cupon no valido')
-    } */
-
-    
 
 
 
