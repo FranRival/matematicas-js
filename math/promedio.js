@@ -1,15 +1,11 @@
 function calcularPromedio(lista){
 
-/*     let sumaLista = 0
+    function sumarTodosElementos(valorAcumulado,nuevoValor){//no es el indice. es el elemento en el array.
 
-    for (let i = 0; i < lista.length; i++) {
-        sumaLista = sumaLista + lista[i]
-    } */
+        return valorAcumulado+nuevoValor
+    }
 
-
-    function sumarTodosElementos(){}
-
-    const sumaLista = lista.reduce()//metodo de funcion.
+    const sumaLista = lista.reduce(sumarTodosElementos)
 
     const promedio = sumaLista / lista.length
     console.log(promedio);
@@ -17,5 +13,4 @@ function calcularPromedio(lista){
 
 }
 
-//metodo reduce.
-//en que dickenson la lista es un array y no una variable numerica o stringzoniana?
+
