@@ -103,4 +103,9 @@ function sacarPorcentaje(){
     pResult.innerText = 'El nuevo precio con descuento es: $' + resultado
 }
 
-//metodo find - filter 
+//promedio: suma y divide. ese es el punto central 
+//moda:
+//mediana: el punto central. de menor a mayor. la mitad. mas confiable. y luego, ambos puntos medios, (vecinos) se suman, yse dividen. y ese es el promedio. 
+
+
+//moda: cuantos elementos en una lista se repiten. 
