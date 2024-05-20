@@ -13,9 +13,9 @@ function calcularMediana(lista){
     if (listaEsPar) {
         
     }else{
-        const medianaImpar = Math.floor(lista.length / 2) + 1
-        console.log(medianaImpar);
-        console.log(lista[medianaImpar]);
+        const indexMitadListaImpar = Math.floor(lista.length / 2)
+        console.log(indexMitadListaImpar);
+        console.log(lista[indexMitadListaImpar]);
     }
 }
 
