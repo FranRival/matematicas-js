@@ -1,5 +1,12 @@
 function esPar(lista){
-    (numero % 2) //%: modulo. 
+
+    if (lista.length % 2) {
+        //si ese reciduo es 1, el numero es impar
+        //pero sacamos un 0, no hubo recidio, y es par
+        return false
+    }else{
+        return true
+    }
 }
 
 
