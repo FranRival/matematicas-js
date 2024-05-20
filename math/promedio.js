@@ -7,6 +7,17 @@ function esPar(lista){
     }else{
         return true
     }
+
+
+    //los condicionales necesitan que la condicion se cumpla
+    //la condicion, validacion, debe devolver true, para que
+    //entre a la condicional.
+
+
+
+    return !(lista.length%2)// nos saca true cuando estamos en impar y false cuando estamos en par
+
+    //esta funcion declara que es par, tenemos que voltearla.
 }
 
 
