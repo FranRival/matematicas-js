@@ -14,9 +14,8 @@ function calcularMediana(lista){
         
     }else{
         const medianaImpar = Math.floor(lista.length / 2) + 1
-        //SIMPLE LOGICA: este no da el elemento de la mediana.
-        //da el indice. 
-        //no da el numero o string a la mitad del array.
+        console.log(medianaImpar);
+        console.log(lista[medianaImpar]);
     }
 }
 
