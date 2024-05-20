@@ -14,8 +14,10 @@ function calcularMediana(lista){
         
     }else{
         const indexMitadListaImpar = Math.floor(lista.length / 2)
+        const medianaListaImpar = lista[indexMitadListaImpar]
         console.log(indexMitadListaImpar);
-        console.log(lista[indexMitadListaImpar]);
+        console.log(medianaListaImpar);
+        return medianaListaImpar
     }
 }
 
