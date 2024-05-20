@@ -1,3 +1,12 @@
+function esPar(lista){
+    (numero % 2) //%: modulo. 
+}
+
+
+//% significa residuo. 10 no tiene residuos. 11 si
+
+
+
 function calcularPromedio(lista){
 
 
@@ -12,3 +21,4 @@ function calcularPromedio(lista){
 }
 
 
+//mediana en lista impar
