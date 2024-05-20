@@ -4,6 +4,8 @@ function esPar(lista){
 
 
 //% significa residuo. 10 no tiene residuos. 11 si
+//los numeros pares dara 0. 
+//los numeros impares dara 1.
 
 
 
