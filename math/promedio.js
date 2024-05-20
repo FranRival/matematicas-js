@@ -1,30 +1,24 @@
 function esPar(lista){
+    return !(lista.length%2)
+}
 
-    if (lista.length % 2) {
-        //si ese reciduo es 1, el numero es impar
-        //pero sacamos un 0, no hubo recidio, y es par
-        return false
-    }else{
-        return true
-    }
-
-
-    //los condicionales necesitan que la condicion se cumpla
-    //la condicion, validacion, debe devolver true, para que
-    //entre a la condicional.
-
-
-
-    return !(lista.length%2)// nos saca true cuando estamos en impar y false cuando estamos en par
-
-    //esta funcion declara que es par, tenemos que voltearla.
+function esImpar(lista){
+    return lista.length%2
 }
 
 
-//% significa residuo. 10 no tiene residuos. 11 si
-//los numeros pares dara 0. 
-//los numeros impares dara 1.
+function calcularMediana(lista){
+    const listaEsPar = esPar(lista)//es true o false
 
+    if (listaEsPar) {
+        
+    }else{
+        const medianaImpar = Math.floor(lista.length / 2) + 1
+        //SIMPLE LOGICA: este no da el elemento de la mediana.
+        //da el indice. 
+        //no da el numero o string a la mitad del array.
+    }
+}
 
 
 function calcularPromedio(lista){
