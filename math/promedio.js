@@ -18,7 +18,7 @@ function calcularMediana(lista){
         console.log(indexMitadListaImpar);
         console.log(medianaListaImpar);
         return medianaListaImpar
-    }
+    } 
 }
 
 
