@@ -11,18 +11,20 @@ function calcularMediana(lista){
     const listaEsPar = esPar(lista)//es true o false
 
     if (listaEsPar) {
-/*         const indexMitad1ListaPar = (lista.length/2) - 1
-        const indexMitad2ListaPar = lista.length/2 */
+        const indexMitad1ListaPar = (lista.length/2) - 1
+        const indexMitad2ListaPar = lista.length/2
 
-        const Mitad1ListaPar = lista[(lista.length/2) - 1]
-        const Mitad2ListaPar = lista[lista.length/2]
+/*         const Mitad1ListaPar = lista[(lista.length/2) - 1]
+        const Mitad2ListaPar = lista[lista.length/2] */
 
         //indexMitad1ListaPar
         //--------| |-------------
         //indexMitad2ListaPar
         //estas 2 variables ubican el objetivo.
 
-        const listaMitades = [Mitad1ListaPar,Mitad2ListaPar]
+        const listaMitades = []
+        listaMitades.push(lista[indexMitad1ListaPar])
+        listaMitades.push(lista[indexMitad2ListaPar])
         calcularPromedio(listaMitades)
 
     }else{
