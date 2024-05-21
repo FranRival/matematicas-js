@@ -14,19 +14,11 @@ function calcularMediana(lista){
         const indexMitad1ListaPar = (lista.length/2) - 1
         const indexMitad2ListaPar = lista.length/2
 
-        //variables que calculan el indice. 
-        //variables que son objetos.
-        //es maleabilidad pura y dura.
-
-
-
         //indexMitad1ListaPar
         //--------| |-------------
         //indexMitad2ListaPar
         //estas 2 variables ubican el objetivo.
-        calcularPromedio([])
-
-        //[lista[indexMitad1ListaPar], lista[indexMitad2ListaPar]] - un array a partir de 2 elementos de otro array
+        calcularPromedio([lista[indexMitad1ListaPar], lista[indexMitad2ListaPar]])
 
     }else{
         const indexMitadListaImpar = Math.floor(lista.length / 2)
