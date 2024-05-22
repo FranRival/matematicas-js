@@ -50,11 +50,11 @@ function ordenarLista(listaDesordenada){
     function orderListaSort(valorAcumulado,nuevoValor){
 
         if (valorAcumulado>nuevoValor) {
-            return -1
+            return 1
         }else if (valorAcumulado==nuevoValor){
             return 0
         }else if (valorAcumulado < nuevoValor){
-            return 1
+            return -1
         }
     }
 
