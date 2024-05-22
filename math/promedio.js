@@ -45,5 +45,23 @@ function calcularPromedio(lista){
 }
 
 
+function ordenarLista(listaDesordenada){
+
+    function orderListaSort(valorAcumulado,nuevoValor){
+
+        if (valorAcumulado>nuevoValor) {
+            return -1
+        }else if (valorAcumulado==nuevoValor){
+            return 0
+        }else if (valorAcumulado < nuevoValor){
+            return 1
+        }
+    }
+
+    const lista = listaDesordenada.sort(orderListaSort)
+    return lista
+}
+
+
 //metodo sort
 //algoritmos de ordenamiento
