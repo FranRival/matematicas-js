@@ -7,7 +7,11 @@ function esImpar(lista){
 }
 
 
-function calcularMediana(lista){
+function calcularMediana(listaDesordenada){
+
+    const lista = ordenarLista(listaDesordenada)
+
+
     const listaEsPar = esPar(lista)
 
     if (listaEsPar) {
