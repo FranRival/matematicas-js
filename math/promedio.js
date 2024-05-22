@@ -49,13 +49,15 @@ function ordenarLista(listaDesordenada){
 
     function orderListaSort(valorAcumulado,nuevoValor){
 
-        if (valorAcumulado>nuevoValor) {
+/*         if (valorAcumulado>nuevoValor) {
             return 1
         }else if (valorAcumulado==nuevoValor){
             return 0
         }else if (valorAcumulado < nuevoValor){
             return -1
-        }
+        } */
+
+        return valorAcumulado - nuevoValor //es equivalente a otod este codigo.
     }
 
     const lista = listaDesordenada.sort(orderListaSort)
