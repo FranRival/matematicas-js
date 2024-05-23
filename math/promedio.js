@@ -7,6 +7,16 @@ function esImpar(lista){
 }
 
 
+function calcularModa(lista){
+    const listaCount = {}
+
+    for (let i = 0; i < lista.length; i++) {
+        const elemento = lista[i];
+        listaCount[elemento]//esta creando elementos para llenarlos en listaCOunt
+    }
+}
+
+
 function calcularMediana(listaDesordenada){
 
     const lista = ordenarLista(listaDesordenada)
@@ -37,8 +47,6 @@ function calcularMediana(listaDesordenada){
 
 
 function calcularPromedio(lista){
-
-
     const sumarTodosElementos = (valorAcumulado,nuevoValor) => valorAcumulado+nuevoValor
 
     const sumaLista = lista.reduce(sumarTodosElementos)
@@ -52,16 +60,7 @@ function calcularPromedio(lista){
 function ordenarLista(listaDesordenada){
 
     function orderListaSort(valorAcumulado,nuevoValor){
-
-/*         if (valorAcumulado>nuevoValor) {
-            return 1
-        }else if (valorAcumulado==nuevoValor){
-            return 0
-        }else if (valorAcumulado < nuevoValor){
-            return -1
-        } */
-
-        return valorAcumulado - nuevoValor //es equivalente a otod este codigo.
+        return valorAcumulado - nuevoValor
     }
 
     const lista = listaDesordenada.sort(orderListaSort)
@@ -69,5 +68,5 @@ function ordenarLista(listaDesordenada){
 }
 
 
-//metodo sort
-//algoritmos de ordenamiento
+//calculando moda a partir de arrays.
+//moda, mas elementos repetidos en el array
