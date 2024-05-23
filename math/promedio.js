@@ -21,6 +21,7 @@ function calcularModa(lista){
         }else{
             listaCount[elemento] = 1
         }//funciona un contador
+        //js no sabe cual es el numero mayor
        
     }
     console.log(listaCount);
