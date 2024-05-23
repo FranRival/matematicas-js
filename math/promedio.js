@@ -7,14 +7,28 @@ function esImpar(lista){
 }
 
 
+
+
+
 function calcularModa(lista){
     const listaCount = {}
 
     for (let i = 0; i < lista.length; i++) {
         const elemento = lista[i];
-        listaCount[elemento]//esta creando elementos para llenarlos en listaCOunt
+
+        if (listaCount[elemento]) {
+            listaCount[elemento] += 1
+        }else{
+            listaCount[elemento] = 1
+        }//funciona un contador
+       
     }
+    console.log(listaCount);
 }
+
+
+
+
 
 
 function calcularMediana(listaDesordenada){
