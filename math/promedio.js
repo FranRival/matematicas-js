@@ -27,13 +27,14 @@ function calcularModa(lista){
 
     const listaArray = Object.entries(listaCount)
     const listaOrdenada = ordenarListaBidimensional(listaArray,1)
-    const listaOrdenadaMaxNumber = listaOrdenada[lista.length-1]
+    const listaMaxNumber = listaOrdenada[listaOrdenada.length-1]
 
-    console.log({listaCount, listaArray, listaOrdenada, listaOrdenadaMaxNumber});
+    console.log({listaCount, listaArray, listaOrdenada, listaMaxNumber});
 }
 
 
 //sha not understand nothing alv
+//al parecer ahora aparece ya cual se repite more.
 
 
 
