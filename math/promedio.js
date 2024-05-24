@@ -25,10 +25,16 @@ function calcularModa(lista){
        
     }
     console.log(listaCount);
+
+    const listaArray = Object.entries(listaCount)
+    console.log({
+        listaCount,
+        listaArray
+    });
 }
 
 
-
+//como ordenar una lista de listas?
 
 
 
@@ -83,5 +89,6 @@ function ordenarLista(listaDesordenada){
 }
 
 
-//calculando moda a partir de arrays.
-//moda, mas elementos repetidos en el array
+//calculando moda: arrays a partir de objetos.
+
+//array bidimensional. listas dentro de otras listas.
