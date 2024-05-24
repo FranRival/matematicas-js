@@ -79,10 +79,10 @@ function calcularPromedio(lista){
 
 
 
-function ordenarListaBidimensional(listaDesordenada){
+function ordenarListaBidimensional(listaDesordenada,i){
 
     function orderListaSort(valorAcumulado,nuevoValor){
-        return valorAcumulado[1] - nuevoValor[1]
+        return valorAcumulado[i] - nuevoValor[i]
     }
 
     const lista = listaDesordenada.sort(orderListaSort)
@@ -95,7 +95,8 @@ function ordenarListaBidimensional(listaDesordenada){
 //ordenarListaBidimensional(listaBi2)
 //this modofoco esta ordenada de menor a mayor
 
-
+//para ubicar bien this modofoko shet. 
+//esa i ahi arriba, es para indicar el indice de la pocision del focking array a la dickensn.
 
 
 /* function ordenarLista(listaDesordenada){
