@@ -24,17 +24,16 @@ function calcularModa(lista){
         //js no sabe cual es el numero mayor
        
     }
-    console.log(listaCount);
 
     const listaArray = Object.entries(listaCount)
-    console.log({
-        listaCount,
-        listaArray
-    });
+    const listaOrdenada = ordenarListaBidimensional(listaArray,1)
+    const listaOrdenadaMaxNumber = listaOrdenada[lista.length-1]
+
+    console.log({listaCount, listaArray, listaOrdenada, listaOrdenadaMaxNumber});
 }
 
 
-//como ordenar una lista de listas?
+//sha not understand nothing alv
 
 
 
@@ -99,15 +98,7 @@ function ordenarListaBidimensional(listaDesordenada,i){
 //esa i ahi arriba, es para indicar el indice de la pocision del focking array a la dickensn.
 
 
-/* function ordenarLista(listaDesordenada){
 
-    function orderListaSort(valorAcumulado,nuevoValor){
-        return valorAcumulado - nuevoValor
-    }
-
-    const lista = listaDesordenada.sort(orderListaSort)
-    return lista
-} */
 
 //calculando moda: arrays a partir de objetos.
 
