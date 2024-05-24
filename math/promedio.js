@@ -30,6 +30,8 @@ function calcularModa(lista){
     const listaMaxNumber = listaOrdenada[listaOrdenada.length-1]
 
     console.log({listaCount, listaArray, listaOrdenada, listaMaxNumber});
+
+    console.log('La moda es: ' + listaMaxNumber[0]);
 }
 
 
