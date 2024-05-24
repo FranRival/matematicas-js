@@ -29,9 +29,10 @@ function calcularModa(lista){
     const listaOrdenada = ordenarListaBidimensional(listaArray,1)
     const listaMaxNumber = listaOrdenada[listaOrdenada.length-1]
 
-    console.log({listaCount, listaArray, listaOrdenada, listaMaxNumber});
 
     console.log('La moda es: ' + listaMaxNumber[0]);
+    const moda = listaMaxNumber
+    return moda
 }
 
 
