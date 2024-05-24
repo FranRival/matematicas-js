@@ -78,7 +78,27 @@ function calcularPromedio(lista){
 }
 
 
-function ordenarLista(listaDesordenada){
+
+function ordenarListaBidimensional(listaDesordenada){
+
+    function orderListaSort(valorAcumulado,nuevoValor){
+        return valorAcumulado[1] - nuevoValor[1]
+    }
+
+    const lista = listaDesordenada.sort(orderListaSort)
+    return lista
+}//yo ya no undestand nothing. 
+//ahora me da un array bidimensional organizado.
+
+//const listaBi2 = [['a',100], ['b',20], ['c',10]]
+//y luego 
+//ordenarListaBidimensional(listaBi2)
+//this modofoco esta ordenada de menor a mayor
+
+
+
+
+/* function ordenarLista(listaDesordenada){
 
     function orderListaSort(valorAcumulado,nuevoValor){
         return valorAcumulado - nuevoValor
@@ -86,8 +106,7 @@ function ordenarLista(listaDesordenada){
 
     const lista = listaDesordenada.sort(orderListaSort)
     return lista
-}
-
+} */
 
 //calculando moda: arrays a partir de objetos.
 
