@@ -11,9 +11,7 @@ ClaseMath.esImpar = function esImpar(lista){
     return lista.length%2
 }
 
-
-
-
+//conbinamos this shit con static. objetos. y otras mamadas de objetos.
 
 ClaseMath.calcularModa = function calcularModa(lista){
     const listaCount = {}
@@ -39,10 +37,6 @@ ClaseMath.calcularModa = function calcularModa(lista){
     const moda = listaMaxNumber
     return moda
 }
-
-
-//sha not understand nothing alv
-//al parecer ahora aparece ya cual se repite more.
 
 
 
