@@ -1,8 +1,13 @@
-function esPar(lista){
+const ClaseMath = {}
+
+
+
+
+ClaseMath.esPar = function esPar(lista){
     return !(lista.length%2)
 }
 
-function esImpar(lista){
+ClaseMath.esImpar = function esImpar(lista){
     return lista.length%2
 }
 
@@ -10,7 +15,7 @@ function esImpar(lista){
 
 
 
-function calcularModa(lista){
+ClaseMath.calcularModa = function calcularModa(lista){
     const listaCount = {}
 
     for (let i = 0; i < lista.length; i++) {
@@ -41,7 +46,7 @@ function calcularModa(lista){
 
 
 
-function calcularMediana(listaDesordenada){
+ClaseMath.calcularMediana = function calcularMediana(listaDesordenada){
 
     const lista = ordenarLista(listaDesordenada)
 
@@ -70,7 +75,7 @@ function calcularMediana(listaDesordenada){
 }
 
 
-function calcularPromedio(lista){
+ClaseMath.calcularPromedio= function calcularPromedio(lista){
     const sumarTodosElementos = (valorAcumulado,nuevoValor) => valorAcumulado+nuevoValor
 
     const sumaLista = lista.reduce(sumarTodosElementos)
@@ -82,28 +87,14 @@ function calcularPromedio(lista){
 
 
 
-function ordenarListaBidimensional(listaDesordenada,i){
+ClaseMath.ordenarListaBidimensional= function ordenarListaBidimensional(listaDesordenada,i){
 
-    function orderListaSort(valorAcumulado,nuevoValor){
+    ClaseMath.orderListaSort= function orderListaSort(valorAcumulado,nuevoValor){
         return valorAcumulado[i] - nuevoValor[i]
     }
 
     const lista = listaDesordenada.sort(orderListaSort)
     return lista
-}//yo ya no undestand nothing. 
-//ahora me da un array bidimensional organizado.
+}
 
-//const listaBi2 = [['a',100], ['b',20], ['c',10]]
-//y luego 
-//ordenarListaBidimensional(listaBi2)
-//this modofoco esta ordenada de menor a mayor
-
-//para ubicar bien this modofoko shet. 
-//esa i ahi arriba, es para indicar el indice de la pocision del focking array a la dickensn.
-
-
-
-
-//calculando moda: arrays a partir de objetos.
-
-//array bidimensional. listas dentro de otras listas.
+//clases y metodos estaticos
