@@ -91,4 +91,4 @@ ClaseMath.ordenarListaBidimensional= function ordenarListaBidimensional(listaDes
     return lista
 }
 
-//clases y metodos estaticos
+//analisis salarial con js
