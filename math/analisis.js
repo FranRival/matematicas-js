@@ -7,8 +7,5 @@ console.log(salarios);
 
 
 function encontrarPersona(personaBusqueda){
-    const persona = salarios.find((persona)=>{
-        return persona.name == personaBusqueda
-    })
-    return persona
-}//encontrarPersona('Bruce')
+    return salarios.find(persona => persona.name == personaBusqueda)
+}
