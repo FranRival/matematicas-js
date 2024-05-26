@@ -9,3 +9,11 @@ console.log(salarios);
 function encontrarPersona(personaBusqueda){
     return salarios.find(persona => persona.name == personaBusqueda)
 }
+
+function medianaPorPersona(nombrePersona){
+    const trabajos = encontrarPersona(nombrePersona).trabajos //es un array
+
+
+
+    const salarios = trabajos.map()//recorrer todos los elementos de un array y crear otro array a partir de ese array inicial
+}
