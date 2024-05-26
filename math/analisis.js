@@ -6,8 +6,9 @@ console.log(salarios);
 //.filter() - todos los arreglos que tuvieran la conicidencia.
 
 
-const personaBusqueda = 'Juanita'
-
-const persona = salarios.find((persona)=>{//el primero en encontrar la conicindencia
-    return persona.name == personaBusqueda
-})
+function encontrarPersona(personaBusqueda){
+    const persona = salarios.find((persona)=>{
+        return persona.name == personaBusqueda
+    })
+    return persona
+}//encontrarPersona('Bruce')
