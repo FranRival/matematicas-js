@@ -42,10 +42,10 @@ ClaseMath.calcularModa = function calcularModa(lista){
 
 ClaseMath.calcularMediana = function calcularMediana(listaDesordenada){
 
-    const lista = ordenarLista(listaDesordenada)
+    const lista = ClaseMath.ordenarLista(listaDesordenada)
 
 
-    const listaEsPar = esPar(lista)
+    const listaEsPar = ClaseMath.esPar(lista)
 
     if (listaEsPar) {
         const indexMitad1ListaPar = (lista.length/2) - 1
@@ -55,7 +55,7 @@ ClaseMath.calcularMediana = function calcularMediana(listaDesordenada){
         const listaMitades = []
         listaMitades.push(lista[indexMitad1ListaPar])
         listaMitades.push(lista[indexMitad2ListaPar])
-       const medianaListaPar = calcularPromedio(listaMitades)
+       const medianaListaPar = ClaseMath.calcularPromedio(listaMitades)
        return medianaListaPar
 
     }else{

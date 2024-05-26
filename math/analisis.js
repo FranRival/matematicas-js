@@ -16,5 +16,8 @@ function medianaPorPersona(nombrePersona){
     const salarios = trabajos.map(function (elemento){
         return elemento.salario
     })
-    console.log(salarios);
-}//medianaPorPersona('Daniela'): ya no muestra trabajos, anos, solo muestra numeros.
+
+    const medianaSalarios = ClaseMath.calcularMediana(salarios)
+
+    console.log(medianaSalarios);
+}
