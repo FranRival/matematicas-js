@@ -79,6 +79,16 @@ ClaseMath.calcularPromedio= function calcularPromedio(lista){
 
 }
 
+ClaseMath.ordenarLista = function ordenarLista(listaDesordenada) {
+    function ordenarListaSort(valorAcumulado, nuevoValor) {
+      return valorAcumulado - nuevoValor;
+    }
+
+    
+    const lista = listaDesordenada.sort(ordenarListaSort);
+    
+    return lista;
+  }
 
 
 ClaseMath.ordenarListaBidimensional= function ordenarListaBidimensional(listaDesordenada,i){
