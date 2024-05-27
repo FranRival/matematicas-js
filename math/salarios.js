@@ -3,8 +3,8 @@ salarios.push({
     name:'Juanita',
     trabajos:[
         {year:2018,empresa:'Freelance',salario:250,},
-        {year:2019,empresa:'Freelance',salario:250,},
-        {year:2020,empresa:'Industrias Mokepon',salario:850,},
+        {year:2019,empresa:'Freelance',salario:250,}, //diferencia entre 2018 a 2019? - 0 
+        {year:2020,empresa:'Industrias Mokepon',salario:850,}, //de 2019 a 2020, el porcentaje.
         {year:2021,empresa:'Industrias Mokepon',salario:1050,},
         {year:2022,empresa:'Industrias Mokepon',salario:1250,},
         {year:2023,empresa:'Industrias Mokepon',salario:1250,},

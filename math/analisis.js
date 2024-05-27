@@ -25,5 +25,14 @@ function medianaPorPersona(nombrePersona){
 
 function proyeccionPorPersona(nombrePersona){
     const trabajos = encontrarPersona(nombrePersona).trabajos
-    
+
+    let porcentajeDeCrecimiento = []//hay que crear una lista donde tenga los diferentes incrementos de salarios a lo largo de su carrera profesional.
+
+    for (let i = 1; i < trabajos.length; i++) {
+
+        const salarioActual = trabajos[i].salario
+        const salarioPasado = trabajos[i-1].salario
+        const crecimiento = salarioActual - salarioPasado
+        //transformar crecimiento en porcentaje
+    }
 }
