@@ -20,4 +20,4 @@ function medianaPorPersona(nombrePersona){
     const medianaSalarios = ClaseMath.calcularMediana(salarios)
 
     console.log(medianaSalarios);
-}
+} 
