@@ -39,7 +39,8 @@ function proyeccionPorPersona(nombrePersona){
 
         //in this part donde dice .push, creo que ya le entiendo a js a lverga
 
-        porcentajeCrecimiento.push(porcentajeCrecimiento)
+        porcentajeDeCrecimiento.push(porcentajeCrecimiento)
     }
-    console.log(porcentajeCrecimiento);
-}
+    console.log(porcentajeDeCrecimiento);
+}//proyeccionPorPersona('Juanita')
+//(6) [0, 2.4, 0.23529411764705882, 0.19047619047619047, 0, 0] - da un arreglo de representacion de crecimeinto.
