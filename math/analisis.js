@@ -47,7 +47,10 @@ function proyeccionPorPersona(nombrePersona){
 
     console.log({porcentajeDeCrecimiento, medianaPorcentajesCrecimiento});
 
-}//proyeccionPorPersona('Juanita')
-//obtenemos
-//medianaPorcentajeCrecimiento - un procentaje mediana
-//y un array en procentajeCrecimiento
+
+    const ultimoSalario = trabajos[trabajos.length-1].salario
+    const nuevoSalario = ultimoSalario * porcentajeDeCrecimiento
+
+    console.log(nuevoSalario); //sale de resultado NaN
+
+}
