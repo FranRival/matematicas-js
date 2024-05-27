@@ -41,6 +41,13 @@ function proyeccionPorPersona(nombrePersona){
 
         porcentajeDeCrecimiento.push(porcentajeCrecimiento)
     }
-    console.log(porcentajeDeCrecimiento);
+  
+
+    const medianaPorcentajesCrecimiento = ClaseMath.calcularMediana(porcentajeDeCrecimiento)
+
+    console.log({porcentajeDeCrecimiento, medianaPorcentajesCrecimiento});
+
 }//proyeccionPorPersona('Juanita')
-//(6) [0, 2.4, 0.23529411764705882, 0.19047619047619047, 0, 0] - da un arreglo de representacion de crecimeinto.
+//obtenemos
+//medianaPorcentajeCrecimiento - un procentaje mediana
+//y un array en procentajeCrecimiento
