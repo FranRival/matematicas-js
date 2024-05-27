@@ -21,3 +21,9 @@ function medianaPorPersona(nombrePersona){
 
     console.log(medianaSalarios);
 } 
+
+
+function proyeccionPorPersona(nombrePersona){
+    const trabajos = encontrarPersona(nombrePersona).trabajos
+    
+}
