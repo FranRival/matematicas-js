@@ -34,5 +34,12 @@ function proyeccionPorPersona(nombrePersona){
         const salarioPasado = trabajos[i-1].salario
         const crecimiento = salarioActual - salarioPasado
         //transformar crecimiento en porcentaje
+
+        const porcentajeCrecimiento = crecimiento/salarioPasado
+
+        //in this part donde dice .push, creo que ya le entiendo a js a lverga
+
+        porcentajeCrecimiento.push(porcentajeCrecimiento)
     }
+    console.log(porcentajeCrecimiento);
 }
