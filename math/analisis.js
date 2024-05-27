@@ -49,8 +49,9 @@ function proyeccionPorPersona(nombrePersona){
 
 
     const ultimoSalario = trabajos[trabajos.length-1].salario
-    const nuevoSalario = ultimoSalario * porcentajeDeCrecimiento
+    const nuevoSalario = ultimoSalario * medianaPorcentajesCrecimiento
 
-    console.log(nuevoSalario); //sale de resultado NaN
+    console.log(nuevoSalario); //es incorrecto. ahora el nuevo salario es de 119.04. 
+    //el ultimo salario estaba en 1250
 
 }
