@@ -90,10 +90,23 @@ for(persona of salarios){
             empresas[trabajo.empresa][trabajo.year] = [] //si no existe eso, ahora si existe. 
             //si no existe l infrustria mokepon, ya fue creada, 
             //luego, sino existia el ano de X en industrias mokepon, acaba de ser creado
+            //
+            //sino existia la proepiedad de 2018, ya fue creada
+            //y diciendole que sea un array.
+            //solo queda insertar la infromacion al array.
         }
 
 
+        empresas[trabajo.empresa][trabajo.year].push(trabajo.salario)
+
+        //recapitulando:
+        //recorrimos el array de salarios. linea 85
+        //por cada persona en el arreglo de salarios, estamos recorriendo cada uno de los trabajos que tuvo esa persona
+        //y dentro de ese trabajo, estamos creando un nuevo objeto de empresas que tengan una proepiedad por cada distint empresa
+        //Xcorp. bruce enterprises
+        //y por cada distints empresa estamos creando una propiedad con el ano que esa empresa tuvo empleados reciviendo salarios
+        //y por cada persona que este en esa empresa, en ese ano
+        //estamos insertando el salario
     }
 }
 
-//sho sha no understand nothing a la dickeson.
