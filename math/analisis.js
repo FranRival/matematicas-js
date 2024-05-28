@@ -1,17 +1,12 @@
 console.log(salarios);
 
-//analisis personal de Juanita.
-
-//.find
-//.filter() - todos los arreglos que tuvieran la conicidencia.
-
 
 function encontrarPersona(personaBusqueda){
     return salarios.find(persona => persona.name == personaBusqueda)
 }
 
 function medianaPorPersona(nombrePersona){
-    const trabajos = encontrarPersona(nombrePersona).trabajos //es un array
+    const trabajos = encontrarPersona(nombrePersona).trabajos 
 
     const salarios = trabajos.map(function (elemento){
         return elemento.salario
@@ -26,18 +21,15 @@ function medianaPorPersona(nombrePersona){
 function proyeccionPorPersona(nombrePersona){
     const trabajos = encontrarPersona(nombrePersona).trabajos
 
-    let porcentajeDeCrecimiento = []//hay que crear una lista donde tenga los diferentes incrementos de salarios a lo largo de su carrera profesional.
+    let porcentajeDeCrecimiento = []
 
     for (let i = 1; i < trabajos.length; i++) {
 
         const salarioActual = trabajos[i].salario
         const salarioPasado = trabajos[i-1].salario
         const crecimiento = salarioActual - salarioPasado
-        //transformar crecimiento en porcentaje
 
         const porcentajeCrecimiento = crecimiento/salarioPasado
-
-        //in this part donde dice .push, creo que ya le entiendo a js a lverga
 
         porcentajeDeCrecimiento.push(porcentajeCrecimiento)
     }
@@ -55,3 +47,24 @@ function proyeccionPorPersona(nombrePersona){
     return nuevoSalario
 
 }
+
+
+//estructurando informacion.
+
+//analisis empresarial
+
+/* 
+{
+    Industrias Mokepon: {
+        2018: [{GUARDAR PERSONAS QUE TRABAJARON EN ESTE PLACE}] 
+        2019:
+    }
+    Industrias Mokepon: {
+
+    }Industrias Mokepon:
+    {
+
+    }
+} 
+
+*/
