@@ -87,8 +87,12 @@ for(persona of salarios){
             empresas[trabajo.empresas] = {}
         }
         if (!empresas[trabajos.empresas][trabajo.year]) {
-            
+            empresas[trabajo.empresa][trabajo.year] = [] //si no existe eso, ahora si existe. 
+            //si no existe l infrustria mokepon, ya fue creada, 
+            //luego, sino existia el ano de X en industrias mokepon, acaba de ser creado
         }
+
+
     }
 }
 
