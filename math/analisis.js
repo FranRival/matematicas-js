@@ -83,10 +83,10 @@ const empresas = {}
 
 for(persona of salarios){
     for(trabajo of persona.trabajos){
-        if (!empresas[trabajos.empresas]) {
-            empresas[trabajo.empresas] = {}
+        if (!empresas[trabajo.empresa]) {
+            empresas[trabajo.empresa] = {}
         }
-        if (!empresas[trabajos.empresas][trabajo.year]) {
+        if (!empresas[trabajo.empresa][trabajo.year]) {
             empresas[trabajo.empresa][trabajo.year] = [] //si no existe eso, ahora si existe. 
             //si no existe l infrustria mokepon, ya fue creada, 
             //luego, sino existia el ano de X en industrias mokepon, acaba de ser creado
@@ -110,3 +110,6 @@ for(persona of salarios){
     }
 }
 
+console.log({empresas});
+
+//muestra las empresas con los anos, y la cantidad de 4 personas
