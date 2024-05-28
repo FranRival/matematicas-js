@@ -57,7 +57,10 @@ function proyeccionPorPersona(nombrePersona){
 {
     Industrias Mokepon: {
         2018: [{GUARDAR PERSONAS QUE TRABAJARON EN ESTE PLACE}] 
-        2019:
+        2019: [salarios, salarios, salarios]
+        2020:
+        2021:
+        2022:
     }
     Industrias Mokepon: {
 
@@ -68,3 +71,25 @@ function proyeccionPorPersona(nombrePersona){
 } 
 
 */
+
+//pasar un arreglo complejo a un objeto complejo pero mejor organizado
+
+function analisisEmpresarial(){
+
+}
+
+const empresas = {}
+
+
+for(persona of salarios){
+    for(trabajo of persona.trabajos){
+        if (!empresas[trabajos.empresas]) {
+            empresas[trabajo.empresas] = {}
+        }
+        if (!empresas[trabajos.empresas][trabajo.year]) {
+            
+        }
+    }
+}
+
+//sho sha no understand nothing a la dickeson.
