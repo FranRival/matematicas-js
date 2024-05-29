@@ -100,12 +100,33 @@ function proyeccionEmpresa(nombre){
     }else{
         const empresaYears = Object.keys(empresas[nombre])
 
-        const listaMedianaYears = empresaYears.map(() =>{
+        const listaMedianaYears = empresaYears.map((year) =>{
             return medianaEmpresaYear(nombre,year)
-        }) //creamos un arreglo 
-        //ya no con el ano [2018,2019,2020]
-        //sino tendra la mediana del sueldo
-        //[800, 900,1000]
-        console.log(listaMedianaYears);
+        }) 
+
+        
+            let porcentajeDeCrecimiento = []
+
+            for (let i = 1; i < listaMedianaYears.length; i++) {
+                const salarioActual = listaMedianaYears[i]
+                const salarioPasado = listaMedianaYears[i-1]
+                const crecimiento = salarioActual - salarioPasado
+                const porcentajeCrecimiento = crecimiento/salarioPasado
+
+                porcentajeDeCrecimiento.push(porcentajeCrecimiento)
+            }
+        
+
+            const medianaPorcentajesCrecimiento = ClaseMath.calcularMediana(porcentajeDeCrecimiento)
+
+            console.log({porcentajeDeCrecimiento, medianaPorcentajesCrecimiento});
+
+            const ultimaMedianaSalarios = listaMedianaYears[listaMedianaYears.length-1]
+            const aumento = ultimaMedianaSalarios * medianaPorcentajesCrecimiento
+            const nuevoMediana = ultimaMedianaSalarios + aumento 
+        
+            return nuevoMediana
+        
+
     }
 }
