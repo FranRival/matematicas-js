@@ -93,3 +93,18 @@ function medianaEmpresaYear(nombre, year){
 
 //proyeccion de salarios por empresas
 
+function proyeccionEmpresa(nombre){
+    if (!empresas[nombre]) {
+        console.warn('La empresa no existe');
+        return
+    }else{
+        const empresaYears = Object.keys(empresas[nombre])
+
+        const listaMedianaYears = empresaYears.map(() =>{
+            return medianaEmpresaYear(nombre,year)
+        }) //creamos un arreglo 
+        //ya no con el ano [2018,2019,2020]
+        //sino tendra la mediana del sueldo
+        //[800, 900,1000]
+    }
+}
