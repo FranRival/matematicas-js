@@ -88,3 +88,8 @@ function medianaEmpresaYear(nombre, year){
 }//medianaEmpresaYear('Industrias Mokepon', 2019)
 //busca el nombre de la empresa
 //y da la mediana de los salarios
+
+//proyeccion de una empresa
+
+//proyeccion de salarios por empresas
+
