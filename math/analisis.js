@@ -106,5 +106,6 @@ function proyeccionEmpresa(nombre){
         //ya no con el ano [2018,2019,2020]
         //sino tendra la mediana del sueldo
         //[800, 900,1000]
+        console.log(listaMedianaYears);
     }
 }
