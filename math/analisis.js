@@ -72,7 +72,6 @@ for(persona of salarios){
 
 console.log({empresas});
 
-//salarios empresariales
 
 function medianaEmpresaYear(nombre, year){
     if (!empresas[nombre]) {
@@ -85,13 +84,7 @@ function medianaEmpresaYear(nombre, year){
     }
 
 
-}//medianaEmpresaYear('Industrias Mokepon', 2019)
-//busca el nombre de la empresa
-//y da la mediana de los salarios
-
-//proyeccion de una empresa
-
-//proyeccion de salarios por empresas
+}
 
 function proyeccionEmpresa(nombre){
     if (!empresas[nombre]) {
@@ -126,7 +119,14 @@ function proyeccionEmpresa(nombre){
             const nuevoMediana = ultimaMedianaSalarios + aumento 
         
             return nuevoMediana
-        
-
     }
 }
+
+//top 10% de salarios
+
+//analisis general.
+
+function medianaGeneral(){
+    const nombres = salarios.map(persona => persona.nombre)
+    console.log(nombres);
+}//medianaGeneral() - 20 undefined. 
