@@ -139,5 +139,8 @@ function medianaGeneral(){
 function medianaTop10(){
     const listaMedianas = salarios.map(persona => medianaPorPersona(persona.name))
 
-    console.log(listaMedianas);
-}//solo arroja una lista de numeros
+    const medianasOrdenadas = ClaseMath.ordenarLista(listaMedianas)
+
+    console.log(medianasOrdenadas);
+}//solo arroja una lista de numeros.
+//arroja numeros ordenados
