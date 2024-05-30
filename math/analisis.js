@@ -142,6 +142,11 @@ function medianaTop10(){
     const medianasOrdenadas = ClaseMath.ordenarLista(listaMedianas)
 
 
+    const cantidad = listaMedianas.length / 10
+    const limite = listaMedianas.length - cantidad
+
+    medianasOrdenadas[]
+
 
     20 / 10 = 2
     //la longitud del array.
