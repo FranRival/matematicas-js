@@ -119,6 +119,8 @@ function proyeccionEmpresa(nombre){
             const nuevoMediana = ultimaMedianaSalarios + aumento 
         
             return nuevoMediana
+        
+
     }
 }   
 
