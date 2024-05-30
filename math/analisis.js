@@ -145,26 +145,14 @@ function medianaTop10(){
     const cantidad = listaMedianas.length / 10
     const limite = listaMedianas.length - cantidad
 
-    medianasOrdenadas[]
-
-
- 
     //splice
     //slice
 
     //agarran un areeglo, y trabajr con cierta cantidad de ellos.
 
-    const top10 = medianasOrdenadas.slice(limite, medianasOrdenadas.length)
+    const top10 = medianasOrdenadas.splice(limite, medianasOrdenadas.length)
 
-//puta madre
-    console.log(top10);
-
-    //20 / 10 = 2
-    //la longitud del array.
-    //entre la mitad.
-    //ese 2.
-    //ese 10 es un 10%
-
+    console.log({top10, medianasOrdenadas});
 
 }//solo arroja una lista de numeros.
 //arroja numeros ordenados
