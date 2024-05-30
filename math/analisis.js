@@ -130,5 +130,6 @@ function proyeccionEmpresa(nombre){
 
 function medianaGeneral(){
     const nombres = salarios.map(persona => persona.name)
-    console.log(nombres);
+    const medianaPorCadaNombre = nombres.map(nombre => medianaPorPersona(nombre))
+    console.log({nombres, medianaPorCadaNombre});
 }//medianaGeneral() - 20 undefined.  
