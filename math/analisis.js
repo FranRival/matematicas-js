@@ -124,9 +124,9 @@ function proyeccionEmpresa(nombre){
 
 //top 10% de salarios
 
-//analisis general.
+//analisis general. 
 
 function medianaGeneral(){
-    const nombres = salarios.map(persona => persona.nombre)
+    const nombres = salarios.map(persona => persona.name)
     console.log(nombres);
-}//medianaGeneral() - 20 undefined. 
+}//medianaGeneral() - 20 undefined.  
