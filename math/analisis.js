@@ -14,7 +14,7 @@ function medianaPorPersona(nombrePersona){
 
     const medianaSalarios = ClaseMath.calcularMediana(salarios)
 
-    console.log(medianaSalarios);
+    return medianaSalarios
 } 
 
 
@@ -131,5 +131,13 @@ function proyeccionEmpresa(nombre){
 function medianaGeneral(){
     const listaMedianas = salarios.map(persona => medianaPorPersona(persona.name))
 
-    console.log({listaMedianas});
-}//medianaGeneral() - 20 undefined.  
+
+    const mediana = ClaseMath.calcularMediana(listaMedianas)
+    return mediana
+} 
+
+function medianaTop10(){
+    const listaMedianas = salarios.map(persona => medianaPorPersona(persona.name))
+
+    console.log(listaMedianas);
+}//solo arroja una lista de numeros
