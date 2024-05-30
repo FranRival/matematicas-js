@@ -145,16 +145,13 @@ function medianaTop10(){
     const cantidad = listaMedianas.length / 10
     const limite = listaMedianas.length - cantidad
 
-    //splice
-    //slice
-
-    //agarran un areeglo, y trabajr con cierta cantidad de ellos.
-
     const top10 = medianasOrdenadas.splice(limite, medianasOrdenadas.length)
 
-    console.log({top10, medianasOrdenadas});
 
-}//solo arroja una lista de numeros.
-//arroja numeros ordenados
-//arroja una lista. de los ultimos resultados son los que mas ganan. ahora toca hacer los que mas ganan:
+    const medianaTop10 = ClaseMath.calcularMediana(top10)
+    return medianaTop10
 
+}
+//medianaTop10()
+//medianaGeneral()
+//ya funciona this modofoko.
