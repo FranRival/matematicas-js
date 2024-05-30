@@ -145,6 +145,9 @@ function medianaTop10(){
     const cantidad = listaMedianas.length / 10
     const limite = listaMedianas.length - cantidad
 
+    medianasOrdenadas[]
+
+
  
     //splice
     //slice
