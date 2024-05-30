@@ -145,16 +145,24 @@ function medianaTop10(){
     const cantidad = listaMedianas.length / 10
     const limite = listaMedianas.length - cantidad
 
-    medianasOrdenadas[]
+ 
+    //splice
+    //slice
+
+    //agarran un areeglo, y trabajr con cierta cantidad de ellos.
+
+    const top10 = medianasOrdenadas.slice(limite, medianasOrdenadas.length)
 
 
-    20 / 10 = 2
+    console.log(top10);
+
+    //20 / 10 = 2
     //la longitud del array.
     //entre la mitad.
     //ese 2.
     //ese 10 es un 10%
 
-    console.log(medianasOrdenadas);
+
 }//solo arroja una lista de numeros.
 //arroja numeros ordenados
 //arroja una lista. de los ultimos resultados son los que mas ganan. ahora toca hacer los que mas ganan:
