@@ -120,7 +120,7 @@ function proyeccionEmpresa(nombre){
         
             return nuevoMediana
     }
-}
+}   
 
 //top 10% de salarios
 
