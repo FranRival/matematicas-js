@@ -153,7 +153,7 @@ function medianaTop10(){
 
     const top10 = medianasOrdenadas.slice(limite, medianasOrdenadas.length)
 
-
+//puta madre
     console.log(top10);
 
     //20 / 10 = 2
