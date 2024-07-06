@@ -107,3 +107,8 @@ function sacarPorcentaje(descuento, precio){
 
 //2. desde la primera hoja, a la segunda hoja del final, hay que revisar esos pequenos cambios en el codigo. esos cambios que te los da git en su historial.
 
+//3. esta hoja no ha sobrepasado las 99 lineas de codigo. 
+
+//4. en la linea de codigo donde se hace una nueva hoja, y se cambia es: ec3d1633ee3702a55cc25a677262ce17fed33a01 - construyendo y modificando lo que doit...
+
+//5.con gitk podemos ver las hojas modificadas. y donde comienza a haber nuevos documentos. 
