@@ -97,3 +97,13 @@ function sacarPorcentaje(descuento, precio){
     const resultado = precio * (100 - descuento)/100
     return resultado
 }
+
+
+//estoy en el commit: f074a153cf227484b26c999a9bb63495a91c30a2
+
+//tratando de averiguar how it works this fokin program. 
+
+//1. desde la primera hoja de commits, se dejo de modificar la hoja de math.js
+
+//2. desde la primera hoja, a la segunda hoja del final, hay que revisar esos pequenos cambios en el codigo. esos cambios que te los da git en su historial.
+
