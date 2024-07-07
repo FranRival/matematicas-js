@@ -1,6 +1,8 @@
 console.group('Cuadrado')
 
 
+//desde aqui hay que comenzar a entender this fokin program.
+
 const ladoCUadrado = 5
 const perimetroCUadrado = ladoCUadrado*4
 const areaCuadrado = ladoCUadrado*ladoCUadrado
@@ -112,3 +114,6 @@ function sacarPorcentaje(descuento, precio){
 //4. en la linea de codigo donde se hace una nueva hoja, y se cambia es: ec3d1633ee3702a55cc25a677262ce17fed33a01 - construyendo y modificando lo que doit...
 
 //5.con gitk podemos ver las hojas modificadas. y donde comienza a haber nuevos documentos. 
+
+
+//6.
