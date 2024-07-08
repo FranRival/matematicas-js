@@ -116,4 +116,6 @@ function sacarPorcentaje(descuento, precio){
 //5.con gitk podemos ver las hojas modificadas. y donde comienza a haber nuevos documentos. 
 
 
-//6.
+//6. -basuar de merge
+
+//7. and the trully is que ya entiendo this modofko program
