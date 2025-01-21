@@ -1,4 +1,4 @@
-console.log(salarios);
+//console.log(salarios);
 
 
 function encontrarPersona(personaBusqueda){
@@ -65,7 +65,7 @@ function analisisEmpresarial(){
 const empresas = {}
 
 
-for(persona of salarios){
+/* for(persona of salarios){
     for(trabajo of persona.trabajos){
         if (!empresas[trabajo.empresa]) {
             empresas[trabajo.empresa] = {}
@@ -78,7 +78,7 @@ for(persona of salarios){
         empresas[trabajo.empresa][trabajo.year].push(trabajo.salario)
     }
 }
-
+ */
 console.log({empresas});
 
 
