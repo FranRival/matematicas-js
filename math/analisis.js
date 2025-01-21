@@ -17,7 +17,14 @@ function medianaPorPersona(nombrePersona){
     return medianaSalarios
 } 
 
-//este archivo es un chile con huevo que no esta conectado entre si, si funciona o no, eso no se sabe
+//encontrarPersona
+//medianaPorPersona
+//proyeccionPorPersona
+//analisisEmpresarial
+//medianaEmpresaYear
+//proyeccionEmpresa
+//medianaGeneral
+//medianaTop10
 
 function proyeccionPorPersona(nombrePersona){
     const trabajos = encontrarPersona(nombrePersona).trabajos
@@ -48,6 +55,7 @@ function proyeccionPorPersona(nombrePersona){
     return nuevoSalario
 
 }
+
 
 
 function analisisEmpresarial(){
@@ -83,9 +91,10 @@ function medianaEmpresaYear(nombre, year){
     }else{
        return ClaseMath.calcularMediana(empresas[nombre][year])
     }
-
-
 }
+
+
+
 
 function proyeccionEmpresa(nombre){
     if (!empresas[nombre]) {
@@ -129,6 +138,8 @@ function proyeccionEmpresa(nombre){
 
 //analisis general. 
 
+
+
 function medianaGeneral(){
     const listaMedianas = salarios.map(persona => medianaPorPersona(persona.name))
 
@@ -136,6 +147,9 @@ function medianaGeneral(){
     const mediana = ClaseMath.calcularMediana(listaMedianas)
     return mediana
 } 
+
+
+
 
 function medianaTop10(){
     const listaMedianas = salarios.map(persona => medianaPorPersona(persona.name))
@@ -162,3 +176,6 @@ function medianaTop10(){
 ///1/20/25 - hay un problema. no sieven los links.
 
 ///probando si todo va bien
+
+
+
