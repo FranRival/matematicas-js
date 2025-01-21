@@ -13,6 +13,16 @@ ClaseMath.esImpar = function esImpar(lista){
 
 //conbinamos this shit con static. objetos. y otras mamadas de objetos.
 
+
+//esPar
+//esImpar
+//calcularModa
+//calcularMediana
+//calcularPromedio
+//ordenarLista
+//ordenarListaBidimensional
+//estas son las funciones. ahora, como las hago funcionar
+
 ClaseMath.calcularModa = function calcularModa(lista){
     const listaCount = {}
 
