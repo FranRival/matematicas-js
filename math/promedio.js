@@ -1,8 +1,6 @@
 const ClaseMath = {}
 
 
-
-
 ClaseMath.esPar = function esPar(lista){
     return !(lista.length%2)
 }
@@ -14,7 +12,7 @@ ClaseMath.esImpar = function esImpar(lista){
 //conbinamos this shit con static. objetos. y otras mamadas de objetos.
 
 
-//esPar
+//esPar 
 //esImpar
 //calcularModa
 //calcularMediana
