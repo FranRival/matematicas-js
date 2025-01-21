@@ -17,6 +17,7 @@ function medianaPorPersona(nombrePersona){
     return medianaSalarios
 } 
 
+//este archivo es un chile con huevo que no esta conectado entre si, si funciona o no, eso no se sabe
 
 function proyeccionPorPersona(nombrePersona){
     const trabajos = encontrarPersona(nombrePersona).trabajos
