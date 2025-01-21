@@ -1,5 +1,5 @@
 const ClaseMath = {}
-
+//es un array
 
 ClaseMath.esPar = function esPar(lista){
     return !(lista.length%2)
@@ -9,20 +9,11 @@ ClaseMath.esImpar = function esImpar(lista){
     return lista.length%2
 }
 
-//conbinamos this shit con static. objetos. y otras mamadas de objetos.
+//and this, no se como funciona. ese parametro de lista. 
 
-
-//esPar 
-//esImpar
-//calcularModa
-//calcularMediana
-//calcularPromedio
-//ordenarLista
-//ordenarListaBidimensional
-//estas son las funciones. ahora, como las hago funcionar
 
 ClaseMath.calcularModa = function calcularModa(lista){
-    const listaCount = {}
+    const listaCount = {} //un array
 
     for (let i = 0; i < lista.length; i++) {
         const elemento = lista[i];
@@ -31,9 +22,7 @@ ClaseMath.calcularModa = function calcularModa(lista){
             listaCount[elemento] += 1
         }else{
             listaCount[elemento] = 1
-        }//funciona un contador
-        //js no sabe cual es el numero mayor
-       
+        }
     }
 
     const listaArray = Object.entries(listaCount)
@@ -92,7 +81,6 @@ ClaseMath.ordenarLista = function ordenarLista(listaDesordenada) {
       return valorAcumulado - nuevoValor;
     }
 
-    
     const lista = listaDesordenada.sort(ordenarListaSort);
     
     return lista;
@@ -110,3 +98,13 @@ ClaseMath.ordenarListaBidimensional= function ordenarListaBidimensional(listaDes
 }
 
 //analisis salarial con js
+
+
+//esPar 
+//esImpar
+//calcularModa
+//calcularMediana
+//calcularPromedio
+//ordenarLista
+//ordenarListaBidimensional
+//estas son las funciones. ahora, como las hago funcionar
