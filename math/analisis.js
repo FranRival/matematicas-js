@@ -155,3 +155,7 @@ function medianaTop10(){
 //medianaTop10()
 //medianaGeneral()
 //ya funciona this modofoko.
+
+
+
+///1/20/25 - hay un problema. no sieven los links.

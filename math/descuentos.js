@@ -34,6 +34,8 @@ cuponArray.push({
 
 
 
+
+
 function sacarPorcentaje(){
     const precio = Number(inoutPrice.value)
     const cupon = inputCoupon.value
