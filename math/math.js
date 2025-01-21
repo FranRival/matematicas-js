@@ -1,6 +1,8 @@
 console.group('Cuadrado')
 
 
+//desde aqui hay que comenzar a entender this fokin program.
+
 const ladoCUadrado = 5
 const perimetroCUadrado = ladoCUadrado*4
 const areaCuadrado = ladoCUadrado*ladoCUadrado
@@ -97,3 +99,23 @@ function sacarPorcentaje(descuento, precio){
     const resultado = precio * (100 - descuento)/100
     return resultado
 }
+
+
+//estoy en el commit: f074a153cf227484b26c999a9bb63495a91c30a2
+
+//tratando de averiguar how it works this fokin program. 
+
+//1. desde la primera hoja de commits, se dejo de modificar la hoja de math.js
+
+//2. desde la primera hoja, a la segunda hoja del final, hay que revisar esos pequenos cambios en el codigo. esos cambios que te los da git en su historial.
+
+//3. esta hoja no ha sobrepasado las 99 lineas de codigo. 
+
+//4. en la linea de codigo donde se hace una nueva hoja, y se cambia es: ec3d1633ee3702a55cc25a677262ce17fed33a01 - construyendo y modificando lo que doit...
+
+//5.con gitk podemos ver las hojas modificadas. y donde comienza a haber nuevos documentos. 
+
+
+//6. -basuar de merge
+
+//7. and the trully is que ya entiendo this modofko program
